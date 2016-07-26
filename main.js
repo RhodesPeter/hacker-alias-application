@@ -16,6 +16,9 @@ function aliasGen(a){
   if(a === 'Name...'){
 	document.getElementById("demo").innerHTML = "Your forgot to input your name!";
   }
+  else if (a === ''){
+  document.getElementById("demo").innerHTML = "Your forgot to input your name!";
+  }
   else if (/[^a-z ]/i.test(a)){
 	document.getElementById("demo").innerHTML = "Your name must only include letters from A - Z.";
   }
