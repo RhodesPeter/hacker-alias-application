@@ -11,8 +11,16 @@ var surname = {
 
 function aliasGen(a){
 
-    a = document.getElementById("inputText").value.replace(/\s+/g,' ').trim();
+  a = document.getElementById("inputText").value.replace(/\s+/g,' ').trim();
 	
+  if(a === 'Name...'){
+	document.getElementById("demo").innerHTML = "Your forgot to input your name!";
+  }
+  else if (/[^a-z ]/i.test(a)){
+	document.getElementById("demo").innerHTML = "Your name must only include letters from A - Z.";
+  }
+  else {
+
     b = a.split(' ');
     b = b[1];
 
@@ -29,9 +37,10 @@ function aliasGen(a){
   	}
 
 	if (/[^a-z]/i.test(a)){
-	  document.getElementById("demo").innerHTML = "Your name must start with a letter from A - Z.";
+	  document.getElementById("demo").innerHTML = "Your name must only include letters from A - Z.";
 	}
 	else {
 	  document.getElementById("demo").innerHTML = firstName[a] + surname[b];
 	}
+  }
 }
