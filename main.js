@@ -5,7 +5,7 @@ var firstName = {
 };
 var surname = {
     A:"Analogue", B:"Bomb", C:"Catalyst", D:"Discharge", E:"Electron", F:"Faraday", G:"Gig", H:"Hacker", I:"IP", J:"Jabber",
-    K:"Killer", L:"Lazer", M:"Murderer", N:"n00b", O:"Overclock", P:"Payload", Q:"Quark", R:"Ray", S:"Spy", T:"T-Rex",
+    K:"Killer", L:"Lazer", M:"Madman", N:"n00b", O:"Overclock", P:"Payload", Q:"Quark", R:"Ray", S:"Spy", T:"T-Rex",
     U:"Unit", V:"Virus", W:"Worm", X:"X", Y:"Yob", Z:"Zombie"
 };
 
