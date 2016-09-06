@@ -9,11 +9,11 @@
 
 <div align="center">
 	<img src="hackerAliasTitle.png" height="81" width="561">
-	<form>
-		<input type="text" id="inputText" name="name" size="38.7" value="Name..."><br>
+	<form onsubmit="javascript:aliasGen();return false;">
+		<input type="text" id="inputText" name="name" size="38.7" value="Name..." onfocus="if(this.value=='Name...') this.value=''" onblur="if(this.value=='') this.value='Name...'"br>
 	</form>
-	<button onclick="aliasGen()" style="margin-top: 5px">Create Alias</button>
-	<p id="demo"></p>
+	<button type="button" onclick="aliasGen()" style="margin-top: 5px">Create Alias</button>
+	<p id="generatedAlias"><br></p>
 </div>
 
 </body>
